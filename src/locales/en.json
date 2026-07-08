@@ -1,0 +1,94 @@
+{
+  "sidebar": {
+    "menu": "Menu",
+    "dashboard": "Dashboard",
+    "events": "Events",
+    "bookings": "Bookings",
+    "general": "General",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "header": {
+    "search": "Search task"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Plan, manage and track your event bookings with ease.",
+    "addBooking": "Add Booking",
+    "exportData": "Export Data"
+  },
+  "stats": {
+    "totalBookings": "Total Bookings",
+    "totalRevenue": "Total Revenue",
+    "availableSeats": "Available Seats",
+    "increased": "Increased from last month",
+    "filled": "filled",
+    "of": "of",
+    "total": "total"
+  },
+  "form": {
+    "title": "New Booking",
+    "subtitle": "Reserve Event Seats",
+    "selectEvent": "Select Event",
+    "selectPlaceholder": "-- Select an Event --",
+    "customerName": "Customer Name",
+    "namePlaceholder": "Your Full Name",
+    "email": "Email Address",
+    "seats": "Number of Seats",
+    "submit": "Submit Booking",
+    "processing": "Processing...",
+    "errSelect": "Please select an event",
+    "errName": "Name is required",
+    "errEmail": "Provide a valid email address",
+    "errSeats": "Sorry, no seat available right now",
+    "success": "Booking request submitted successfully!",
+    "remaining": "Remaining"
+  },
+  "table": {
+    "title": "Booking List",
+    "subtitle": "Complete details of all booking requests",
+    "filter": "Filter",
+    "allEvents": "All Events",
+    "allStatuses": "All Statuses",
+    "refId": "Reference ID",
+    "eventName": "Event Name",
+    "customerDetails": "Customer Details",
+    "seats": "Seats",
+    "status": "Status",
+    "seatsLabel": "seats",
+    "loading": "Loading data...",
+    "empty": "No bookings found",
+    "page": "Page",
+    "prev": "← Previous",
+    "next": "Next →"
+  },
+  "alerts": {
+    "underDev": "\"{featureName}\" feature is currently under development.",
+    "stayTuned": "Stay tuned!"
+  },
+  "events": {
+    "pageTitle": "Events",
+    "pageSubtitle": "Manage and explore all upcoming events.",
+    "title": "Events List",
+    "subtitle": "Overview of available and scheduled events",
+    "total": "events",
+    "name": "Event Name",
+    "date": "Date & Time",
+    "price": "Price",
+    "seats": "Seats Available",
+    "status": "Status",
+    "remaining": "remaining",
+    "almostFull": "Almost Full",
+    "fillingUp": "Filling Up",
+    "available": "Available",
+    "empty": "No events found"
+  },
+  "eventStats": {
+    "totalEvents": "Total Events",
+    "totalCapacity": "Total Capacity",
+    "ticketsSold": "Tickets Sold",
+    "freeEvents": "Free Events",
+    "sold": "sold",
+    "active": "active"
+  }
+}
