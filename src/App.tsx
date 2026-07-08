@@ -64,6 +64,7 @@ function App() {
     addLocalBooking(newBooking);
     refreshEvents();
     setIsModalOpen(false); 
+    toast.success(t('form.success'));
   };
 
   const handleExportPDF = async () => {
