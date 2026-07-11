@@ -20,6 +20,7 @@ function App() {
   const { t, language } = useTranslation();
   const { events, refreshEvents } = useEvents();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<ActiveTab>('dashboard');
   const {
     bookings,
@@ -147,10 +148,25 @@ function App() {
   return (
     <div className="app-layout">
       <Toaster position="top-center" richColors closeButton />
-      <Sidebar activeBookingCount={pendingCount} activeTab={activeTab} onTabChange={setActiveTab} />
+
+      {/* Mobile sidebar overlay */}
+      {isSidebarOpen && (
+        <div className="sidebar-overlay" onClick={() => setIsSidebarOpen(false)} />
+      )}
+
+      <Sidebar
+        activeBookingCount={pendingCount}
+        activeTab={activeTab}
+        onTabChange={(tab) => {
+          setActiveTab(tab);
+          setIsSidebarOpen(false);
+        }}
+        isOpen={isSidebarOpen}
+        onClose={() => setIsSidebarOpen(false)}
+      />
 
       <div className="main-content">
-        <Header />
+        <Header onMenuToggle={() => setIsSidebarOpen(!isSidebarOpen)} />
 
         <div className="page-content animate-fade">
           {activeTab === 'dashboard' && (
